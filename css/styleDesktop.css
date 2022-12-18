@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #686868;
+}
+
+body {
+    margin: 30px 40px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: color .10s;
+}
+
+li :hover{
+    border-color: black;
+    color: black;
+    transition: all .3s;
+}
+ul {
+    list-style: none;
+}
+
+.header_desktop {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.login {
+    margin-left: auto;
+}
+.btn {
+    border-style: solid;
+    padding: 12px 26px;
+    border-radius: 14px;
+    cursor:pointer;
+}
+.btnReg {
+    border-color: #686868;
+}
+
+.content {
+    width: 40%;
+}
+
+.info {
+    width: 540px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heroDesk {
+    width: 40vw;
+    padding: 40px;
+}
+
+.btnLearn {
+    background-color: black;
+    color: white;
+}
+
+.info :hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+
