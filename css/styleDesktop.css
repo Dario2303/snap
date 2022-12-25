@@ -5,19 +5,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     font-size: 14px;
     color: #686868;
 }
-
 body {
     margin: 30px 40px;
     font-family: 'Epilogue', sans-serif;
     font-weight: 500;
 }
-
+Img {
+    align-self: center;
+}
+main {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 80px;
+}
 
 .header_desktop li{
     position: relative;
@@ -31,24 +38,11 @@ body {
     color: black;
     transition: all .3s;
 }
-main {
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-    justify-content: center;
-}
+
 .header_desktop ul {
     list-style: none;
 }
 
-main {
-    display: flex;
-    padding: 10px 80px;
-}
-
-img {
-    align-self: center;
-}
 .arrow {
     transition: transform .15s;
 }
@@ -83,6 +77,26 @@ img {
     justify-content: space-around;
     margin-top: 40px;
 }
+.companyMenu {
+    position: absolute;
+    left: 280px;
+    top: 80px;
+    box-shadow: 5px 5px 10px #cbcbcb;
+    border-radius: 10px;
+    align-items: center;
+    padding: 15px;
+    transition: opacity .15s;
+
+}
+.companyMenu li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.companyMenu ul {
+    list-style: none;
+    text-decoration: none;
+}
 .cursor {
     cursor: pointer;
 }
@@ -101,23 +115,11 @@ img {
     left: 90px;
     background-color: white;
     transition: opacity .15s;
-    
 }
 
-.companyMenu {
-    position: absolute;
-    left: 300px;
-    top: 80px;
-    box-shadow: 5px 5px 10px #cbcbcb;
-    border-radius: 10px;
-    align-items: center;
-    padding: 15px;
+.featuresMenu p {
+    cursor: pointer;
 }
-.companyMenu ul {
-    list-style: none;
-    text-decoration: none;
-}
-
 
 .header_desktop {
     display: flex;
@@ -143,5 +145,11 @@ img {
     margin-left: auto;
 }
 
+
+@media ( max-width: 500px ){
+    header ul *{
+        display: none;
+    }
+}
 
 
