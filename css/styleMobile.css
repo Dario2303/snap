@@ -1,0 +1,65 @@
+@media (max-width: 376px) {
+    body {
+        margin: 0;
+    }
+
+    main {
+        display: block;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .client {
+        width: 4rem;
+    }
+
+    #btnLearnHover{
+        margin-top: 25px;
+    }
+
+    #clients{
+        width: 100%;
+    }
+
+    .heroDeskImg {
+        display: none;
+    }
+
+    .header_desktop {
+        display: none;
+    }
+
+    .header_mobile {
+        display: flex;
+        margin: 20px;
+    }
+
+    .heroMobileImg {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .info {
+        justify-content: space-between;
+        margin: 50px 0 0 0;
+        padding: 0 20px;
+        width: auto;
+        height: 270px;
+    }
+
+    .info p {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+
+}

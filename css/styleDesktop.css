@@ -1,93 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
 a {
-    text-decoration: none;
-    font-size: 14px;
     color: #686868;
+    font-size: 14px;
+    text-decoration: none;
 }
+
 body {
-    margin: 30px 40px;
     font-family: 'Epilogue', sans-serif;
     font-weight: 500;
+    margin: 30px 40px;
 }
+
 Img {
     align-self: center;
 }
+
+h1 {
+    font-size: 80px;
+}
+
 main {
-    display: flex;
-    margin-top: 40px;
     align-items: center;
+    display: flex;
     justify-content: center;
+    margin-top: 40px;
     padding: 10px 80px;
 }
 
-.header_desktop li{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    transition: color .10s;
-}
-
-.header_desktop li :hover{
-    border-color: black;
-    color: black;
-    transition: all .3s;
-}
-
-.header_desktop ul {
-    list-style: none;
-}
 
 .arrow {
     transition: transform .15s;
 }
 
 .btn {
+    cursor: pointer;
+    border-radius: 14px;
     border-style: solid;
     padding: 12px 26px;
-    border-radius: 14px;
-    cursor:pointer;
 }
+
 .btnReg {
     border-color: #686868;
 }
+
 #btnLearn {
     background-color: black;
-    color: white;
-    border-style: solid;
     border-color: black;
-    padding: 12px 26px;
     border-radius: 14px;
-    cursor:pointer;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    padding: 12px 26px;
 }
 
 #btnLearnHover :hover {
-    background-color: white;
     color: black;
+    background-color: white;
     transition: .3s;
 }
 
-.client {
+#clients {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
+    width: 90%;
 }
+
 .companyMenu {
-    position: absolute;
-    left: 280px;
-    top: 80px;
-    box-shadow: 5px 5px 10px #cbcbcb;
-    border-radius: 10px;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #cbcbcb;
+    left: 280px;
     padding: 15px;
-    transition: opacity .15s;
+    position: absolute;
+    top: 80px;
+    transition: display .15s;
 
 }
+
 .companyMenu li {
     cursor: pointer;
     padding: 5px;
@@ -97,24 +94,25 @@ main {
     list-style: none;
     text-decoration: none;
 }
+
 .cursor {
     cursor: pointer;
 }
-.featuresMenu{
-    display: grid;
+
+.featuresMenu {
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #cbcbcb;
     grid-template-columns: auto auto;
     grid-gap: 10px;
-    width: 153px;
     height: 160px;
-    border-radius: 10px;
-    align-items: center;
+    left: 90px;
     padding: 15px;
-    box-shadow: 5px 5px 10px #cbcbcb;
     position: absolute;
     top: 80px;
-    left: 90px;
-    background-color: white;
-    transition: opacity .15s;
+    transition: display .15s;
+    width: 153px;
 }
 
 .featuresMenu p {
@@ -122,34 +120,59 @@ main {
 }
 
 .header_desktop {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 50px;
 }
-.heroDeskImg {
-    width: 480px;
-    height: 640px;
+
+.header_desktop li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    transition: color .10s;
 }
-.info {
-    width: 540px;
+
+.header_desktop li :hover {
+    border-color: black;
+    color: black;
+    transition: all .3s;
+}
+
+.header_desktop ul {
+    list-style: none;
+}
+
+.header_mobile {
+    display: none;
+}
+
+.heroDeskImg {
     height: 640px;
+    width: 480px;
+}
+
+.heroMobileImg {
+    display: none;
+}
+
+.info {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    justify-items:center;
+    height: 640px;
+    justify-content: space-between;
+    justify-items: center;
     margin-right: 100px;
     padding-top: 120px;
+    width: 540px;
+}
+
+.info p {
+    color: #686868;
+    font-size: 18px;
+    line-height: 150%;
+    width: 80%;
 }
 
 .login {
     margin-left: auto;
 }
-
-
-@media ( max-width: 500px ){
-    header ul *{
-        display: none;
-    }
-}
-
-

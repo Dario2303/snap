@@ -8,18 +8,20 @@ const menu = document.querySelector('.menu__desktop')
 displayMenu(features, featuresMenu, company, companyMenu)
 displayMenu(company, companyMenu, features, featuresMenu)
 
+
 function displayMenu (select, menu, selectHidden, menuHidden) {
-    menu.style.opacity = 0;
-        select.addEventListener('click', () => {
-        if(menu.style.opacity === '0'){
-            menuHidden.style.opacity = '0';
+    menu.style.display = 'none';
+    select.addEventListener('click', () => {
+        if(menu.style.display === 'none'){
+            menuHidden.style.display = 'none';
             selectHidden.children[1].style.transform = 'rotate(0deg)';
-            menu.style.opacity = '1';
+            menu.style.display = 'grid';
             select.children[1].style.transform = 'rotate(180deg)';
             return;
-            }
-            menu.style.opacity = '0';
-            select.children[1].style.transform = 'rotate(0deg)'
-        } 
-    )
+        }
+            menu.style.display = 'none';
+            select.children[1].style.transform = 'rotate(0deg)';
+                } 
+        )
 }
+    
