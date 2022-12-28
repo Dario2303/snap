@@ -12,11 +12,63 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-
 </head>
 
 <body>
+  <div id="body">
+  </div>
+
+  <!--MENU MOBILE-->
+  <nav id="navMobile">
+
+    <img src="./images/icon-close-menu.svg" alt="close" id="btnClose">
+
+    <div id="menu">
+      <ul id="menuNav">
+        <li class="featuresMobile cursor"><a href="#">Features</a>
+          <img src="./images/icon-arrow-down.svg" class="arrow">
+        </li>
+        <ul id="featuresMenuMobile">
+          <li>
+            <img src="./images/icon-todo.svg" alt="todo">
+            <p>Todo List</p>
+          </li>
+          <li>
+            <img src="./images/icon-calendar.svg" alt="calendar">
+            <p>Calendar</p>
+          </li>
+          <li>
+            <img src="./images/icon-reminders.svg" alt="reminders">
+            <p>Reminders</p>
+          </li>
+          <li>
+            <img src="./images/icon-planning.svg" alt="planning">
+            <p>Planing</p>
+          </li>
+        </ul>
+        <li class="companyMobile cursor"><a href="#">Company</a>
+          <img src="./images/icon-arrow-down.svg" class="arrow">
+        </li>
+
+          <ul id="companyMenuMobile">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+
+        <li><a href="#">Carrers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul id="user">
+        <li>Login</li>
+        <li id="register">Register</li>
+      </ul>
+    </div>
+  </nav>
+
+
+
   <!--FEATURESMENU-->
   <div class="featuresMenu">
     <img src="./images/icon-todo.svg" alt="todo">
@@ -29,6 +81,7 @@
     <p>Planing</p>
   </div>
 
+  <!--COMPANYMENU-->
   <div class="companyMenu">
     <ul>
       <li>History</li>
@@ -65,10 +118,9 @@
   <!--HEADER MOBILE-->
   <header class="header_mobile">
     <img src="./images/logo.svg" alt="logo">
-    <img src="./images/icon-menu.svg" class="cursor" alt="menuMobile" style="margin-left: auto;">
+    <img src="./images/icon-menu.svg" class="cursor openMenu" alt="menuMobile" style="margin-left: auto;">
   </header>
 
-  <!---->
   <main>
     <img src="./images/image-hero-mobile.png" alt="heroMobile" class="heroMobileImg">
     <div class="info">

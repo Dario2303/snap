@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 a {
@@ -90,11 +92,6 @@ main {
     padding: 5px;
 }
 
-.companyMenu ul {
-    list-style: none;
-    text-decoration: none;
-}
-
 .cursor {
     cursor: pointer;
 }
@@ -175,4 +172,8 @@ main {
 
 .login {
     margin-left: auto;
+}
+
+#navMobile{
+    display: none;
 }
