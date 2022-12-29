@@ -5,7 +5,7 @@ const featuresMenu = document.querySelector('.featuresMenu')
 const companyMenu = document.querySelector('.companyMenu')
 const menu = document.querySelector('.menu__desktop')
 
-//BUTTON FUNCTIONS//
+//MENU FUNCTION DESKTOP//
 displayMenu(features, featuresMenu, company, companyMenu)
 displayMenu(company, companyMenu, features, featuresMenu)
 
@@ -32,23 +32,30 @@ const featuresMobile = document.querySelector('#featuresMobile');
 const greyMode = document.querySelector('#body');
 const openMenu = document.querySelector('.openMenu');
 
-
 CloseMenu()
 
 function CloseMenu () {
-
     openMenu.addEventListener('click', () => {
-        menuMobile.style.display = 'block';
-        greyMode.style.display = 'ruby';
-
+        menuMobile.style.overflow = 'auto';
+        greyMode.style.display = 'block';
+        menuMobile.style.transform = 'translate(0px)';
     })
 
-    btnClose.addEventListener('click', () => { 
-        menuMobile.style.display = 'none';
-        greyMode.style.display = 'none';
+    btnClose.addEventListener('click', () => {
+        menuMobile.style.overflow = 'hidden';
+        menuMobile.style.transform = 'translate(100%)';
+        greyMode.style.display = null;
     })
 }
 
+//close menuMobile after resizing
+const mediaMenuClose = matchMedia('(min-width: 375px)');
 
-
-    
+const resizing = mq => {
+    if (mq.matches) {
+        menuMobile.style.overflow = 'hidden';
+        menuMobile.style.transform = 'translate(100%)';
+        greyMode.style.display = null;
+    }
+}
+mediaMenuClose.addListener(resizing);
