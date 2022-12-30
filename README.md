@@ -5,7 +5,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://dropdown-navigation-three.vercel.app/)
+- Solution URL: [Solution](https://dropdown-navigation-c3ay.vercel.app/)
 
 ### Built with
 
