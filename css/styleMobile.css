@@ -21,18 +21,22 @@
         padding: 0;
     }
 
-    .client {
-        width: 4rem;
+    .arrow {
+        transition: transform .2s;
     }
 
     #btnClose {
         cursor: pointer;
-        float: inline-end;
+        float: right;
         margin: 15px;
     }
 
     #btnLearnHover {
         margin-top: 25px;
+    }
+
+    .client {
+        width: 4rem;
     }
 
     #clients {
@@ -41,18 +45,24 @@
 
     #companyMenuMobile {
         margin-left: 12px;
-    }
+        height: 0;
+        overflow: hidden;
+        margin-left: 20px;
+        transition-duration: .4s;
 
+    }
 
     #featuresMenuMobile li {
         display: grid;
         grid-template-columns: 0.2fr 1fr;
-        margin-left: 12px;
+        margin-left: 20px;
     }
 
     #featuresMenuMobile {
-        display: flex;
-        flex-direction: column;
+        height: 0px;
+        overflow: hidden;
+        transition-property: height;
+        transition-duration: .4s;
     }
 
     .heroDeskImg {
@@ -99,6 +109,7 @@
     #menu {
         width: 100%;
         margin-top: 70px;
+        padding: 0 10px;
     }
 
     #menu * {
@@ -106,15 +117,8 @@
         font-size: 16px;
     }
 
-    #menu ul {
-        padding: 11px;
-    }
-
-    #menu li {
-        padding: 11px;
-    }
-
     #navMobile {
+        overflow: hidden;
         display: block;
         position: absolute;
         background-color: white;
@@ -126,13 +130,23 @@
         transition: transform .5s;
     }
 
+    .pad {
+        padding: 15px;
+    }
+
     #register {
         border-style: solid;
         border-color: #686868;
         border-width: 2px;
         border-radius: 0.8rem;
         margin-top: 15px;
+        padding: 12px 0;
     }
+
+    .rotate .arrow {
+        transform: rotate(180deg);
+    }
+
 
     #user {
         display: flex;

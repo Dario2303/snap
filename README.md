@@ -11,6 +11,10 @@
 
 - Semantic HTML5 markup
 - CSS custom properties
+- grid
 - Flexbox
+- media query
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- Javascript
+- Responsive
+- Matchmedia
