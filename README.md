@@ -1,20 +1,20 @@
 # Frontend Mentor - Intro section with dropdown navigation
 
-![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
+<a href="https://dropdown-navigation-c3ay.vercel.app/">
+<img align="right" width="500" src="./design/desktop-preview.jpg"/>
+</a>
 
+This project is from Frontend Mentor.
 
-### Links
+We apply the following tools: 
 
-- Solution URL: [Solution](https://dropdown-navigation-c3ay.vercel.app/)
-
-### Built with
-
+- flex box and grid
+- performance improvement using .avif format images for supported browsers
 - Semantic HTML5 markup
+- framework: fontawesome icon librery
 - CSS custom properties
-- grid
-- Flexbox
-- media query
+- create and customize normalize.css for our workspace
+- create shortand for html and css
+- Media queries
 - Mobile-first workflow
-- Javascript
 - Responsive
-- Matchmedia
